@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head profile="http://gmpg.org/xfn/11">
  
 	<title><?php bloginfo('name') ?><?php if ( is_404() ) : ?> &raquo; <?php _e('Not Found') ?><?php elseif ( is_home() ) : ?> &raquo; <?php bloginfo('description') ?><?php else : ?><?php wp_title() ?><?php endif ?></title>
  
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 	<!-- leave this for stats -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<div id="header">
+<div class="header">
 </div>
 
 <?php get_sidebar(); ?>
